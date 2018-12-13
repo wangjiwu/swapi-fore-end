@@ -46,19 +46,43 @@
       </div>
       <div class="col-sm-2 col-lg-2 col-md-2"></div>
     </div>
-   
+    
+    <people v-bind:msg = sites v-show = "showCode[0]"></people>
+    <planets v-bind:msg = sites v-show = "showCode[1]"></planets>
+    <films v-bind:msg = sites v-show = "showCode[2]"></films>
+    <species v-bind:msg = sites v-show = "showCode[3]"></species>
+    <vehicles v-bind:msg = sites v-show = "showCode[4]"></vehicles>
+    <starships v-bind:msg = sites v-show = "showCode[5]"></starships>
+
+
   </div>
+
+
+
+
 </template>
 
 <script>
+import people from "../components/people.vue";
+import planets from "../components/planets.vue";
+import films from "../components/films.vue";
+import species from "../components/species.vue";
+import vehicles from "../components/vehicles.vue";
+import starships from "../components/starships.vue";
+
 export default {
   name: "Home",
   data(){
     return {
       url: "",
-      sites: ""
+      sites: "",
+      msg: "",
+      showCode : [false, false, false, false, false, false]
     }
   },
+
+  components:{people,planets,films,species,vehicles,starships},
+
   methods: {
     update: function (message) {
       this.url = message
@@ -77,11 +101,25 @@ export default {
       var that = this;
       //that.sites = "fuck"
 
-  
+      this.showCode = [false, false, false, false, false, false]
+
+      if (that.url.indexOf("people") != -1){
+        that.showCode[0] = true;
+      } else if (that.url.indexOf("planets") != -1){
+        that.showCode[1] = true;
+      } else if (that.url.indexOf("films") != -1){
+        that.showCode[2] = true;
+      } else if (that.url.indexOf("species") != -1){
+        that.showCode[3] = true;
+      } else if (that.url.indexOf("vehicles") != -1){
+        that.showCode[4] = true;
+      } else if (that.url.indexOf("starships") != -1){
+        that.showCode[5] = true;
+      }
 
       that.axios.get("https://swapi.co/api/" + that.url + "?format=json")
       .then(function(res) {
-        console.log(res.data)
+        //console.log(res.data)
         that.sites = res.data
 
       })
