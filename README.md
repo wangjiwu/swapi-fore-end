@@ -1,19 +1,22 @@
 # sw-api 前端仓库
 
-## 1.How-TO
+## 1.How to start?
 
-### 安装
+first confirm you have installed the npm， if not try [install Node.js and npm](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/00143450141843488beddae2a1044cab5acb5125baf0882000) 
+
+### install
 ```
 npm install
 ```
 
-### 编译运行
+### complies and run
 ```
 npm run serve
 ```
 
-### 打包
+### build 
 ```
 npm run build
 ```
+
 
