@@ -38,21 +38,17 @@
           </a>
         </small>
         <p class="lead pad_top">Result:</p>
-        <div class="well">
-          <pre id="interactive_output" class="pre-scrollable">
-            <p>{{sites}}</p>
-          </pre>
-        </div>
+        
       </div>
       <div class="col-sm-2 col-lg-2 col-md-2"></div>
     </div>
-    
-    <people v-bind:msg = sites v-show = "showCode[0]"></people>
-    <planets v-bind:msg = sites v-show = "showCode[1]"></planets>
-    <films v-bind:msg = sites v-show = "showCode[2]"></films>
-    <species v-bind:msg = sites v-show = "showCode[3]"></species>
-    <vehicles v-bind:msg = sites v-show = "showCode[4]"></vehicles>
-    <starships v-bind:msg = sites v-show = "showCode[5]"></starships>
+   
+      <people  v-bind:msg = sites v-show = "showCode[0]"></people>
+      <planets v-bind:msg = sites v-show = "showCode[1]"></planets>
+      <films v-bind:msg = sites v-show = "showCode[2]"></films>
+      <species v-bind:msg = sites v-show = "showCode[3]"></species>
+      <vehicles v-bind:msg = sites v-show = "showCode[4]"></vehicles>
+      <starships v-bind:msg = sites v-show = "showCode[5]"></starships>
 
 
   </div>

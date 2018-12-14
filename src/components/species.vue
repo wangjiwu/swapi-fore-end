@@ -1,7 +1,7 @@
 <template>
   <div>
       <h1 align="center"> species </h1>
-      <table class="table table-bordered table-striped text-center">
+      <table border="1" class="table table-bordered table-striped text-center">
           <tr>
               <td>name</td>
               <td>{{msg.name}}</td>
@@ -69,18 +69,22 @@
 
           <tr>
               <td>people</td>
+              <td>
               <a v-for="item in msg.people" :key="item">
                   {{ item }}
                   <br>
               </a>
+              </td>
           </tr>
 
           <tr>
               <td>films</td>
+              <td>
               <a v-for="item in msg.films" :key="item">
                   {{ item }}
                   <br>
               </a>
+              </td>
           </tr>
 
 

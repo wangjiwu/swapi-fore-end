@@ -1,7 +1,7 @@
 <template>
   <div>
       <h1 align="center"> films </h1>
-      <table class="table table-bordered table-striped text-center">
+      <table border="1" class="table table-bordered table-striped text-center">
           <tr>
               <td>title</td>
               <td>{{msg.title}}</td>
@@ -49,42 +49,52 @@
 
           <tr>
               <td>characters</td>
+              <td>
               <a v-for="item in msg.characters" :key="item">
                   {{ item }}
                   <br>
               </a>
+              </td>
           </tr>
 
           <tr>
               <td>planets</td>
+              <td>
               <a v-for="item in msg.planets" :key="item">
                   {{ item }}
                   <br>
               </a>
+              </td>
           </tr>
 
           <tr>
               <td>starships</td>
+              <td>
               <a v-for="item in msg.starships" :key="item">
                   {{ item }}
                   <br>
               </a>
+              </td>
           </tr>
 
           <tr>
               <td>vehicles</td>
+              <td>
               <a v-for="item in msg.vehicles" :key="item">
                   {{ item }}
                   <br>
               </a>
+              </td>
           </tr>
 
           <tr>
               <td>species</td>
+              <td>
               <a v-for="item in msg.species" :key="item">
                   {{ item }}
                   <br>
               </a>
+              </td>
           </tr>
 
 

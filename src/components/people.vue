@@ -1,7 +1,7 @@
 <template>
   <div>
-      <h1 align="center"> 人物介绍 </h1>
-    <table class="table table-bordered table-striped text-center"> 
+      <h1 align="center"  > 人物介绍 </h1>
+    <table class="table table-bordered table-striped text-center" border="1" > 
       <tr>
         <td>name</td>
         <td>{{msg.name}}</td>
@@ -38,7 +38,7 @@
         <td>homeworld</td>
         <a >{{msg.homeworld}}</a>
       </tr>
-    <tr>
+      <tr>
         <td>created</td>
         <td>{{msg.created}}</td>
       </tr>
@@ -48,36 +48,45 @@
       </tr>
       <tr>
         <td>url</td>
+        
         <a >{{msg.url}}</a>
       </tr>
 
       <tr>
         <td>films</td>
+        <td>
          <a v-for="item in msg.films" :key = "item">
             {{ item }}
             <br>
         </a>
+        </td>
       </tr>
       <tr>
         <td>species</td>
+        <td>
          <a v-for="item in msg.species" :key = "item">
             {{ item }}
             <br>
         </a>
+        </td>
       </tr>
       <tr>
         <td>vehicles</td>
+        <td>
          <a v-for="item in msg.vehicles" :key = "item">
             {{ item }}
             <br>
         </a>
+        </td>
       </tr>
       <tr>
         <td>starships</td>
+        <td>
          <a  v-for="item in msg.starships" :key = "item">
             {{ item }}
             <br>
         </a>
+        </td>
       </tr>
 
 
@@ -99,4 +108,17 @@ export default {
 }
 </script>
 
+<style>
+h1{
+  margin-bottom: 50px 
+}
+.table{
+  margin-bottom: 150px 
+}
+
+.table tr{
+  height: 25px;
+
+}
+</style>
 
