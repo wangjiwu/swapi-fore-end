@@ -3,62 +3,62 @@
       <h1 align="center"> species </h1>
       <table border="1" class="table table-bordered table-striped text-center">
           <tr>
-              <td>Ãû³Æ</td>
+              <td>åç§°</td>
               <td>{{msg["data"]["species"].Name}}</td>
           </tr>
 
           <tr>
-              <td>·ÖÀà</td>
+              <td>åˆ†ç±»</td>
               <td>{{msg["data"]["species"].Classification}}</td>
           </tr>
 
           <tr>
-              <td>Ñ¡ÅÉ</td>
+              <td>é€‰æ´¾</td>
               <td>{{msg["data"]["species"].Designation}}</td>
           </tr>
 
           <tr>
-              <td>Æ½¾ù¸ß¶È</td>
+              <td>å¹³å‡é«˜åº¦</td>
               <td>{{msg["data"]["species"].AverageHeight}}</td>
           </tr>
 
           <tr>
-              <td>·ôÉ«</td>
+              <td>è‚¤è‰²</td>
               <td>{{msg["data"]["species"].SkinColors}}</td>
           </tr>
 
           <tr>
-              <td>·¢É«</td>
+              <td>å‘è‰²</td>
               <td>{{msg["data"]["species"].HairColors}}</td>
           </tr>
 
           <tr>
-              <td>Í«¿×ÑÕÉ«</td>
+              <td>ç³å­”é¢œè‰²</td>
               <td>{{msg["data"]["species"].EyeColors}}</td>
           </tr>
 
           <tr>
-              <td>Æ½¾ùÊÙÃü</td>
+              <td>å¹³å‡å¯¿å‘½</td>
               <td>{{msg["data"]["species"].AverageLifespan}}</td>
           </tr>
 
           <tr>
-              <td>¼ÒÏç</td>
+              <td>å®¶ä¹¡</td>
               <td>{{msg["data"]["species"].Homeworld}}</td>
           </tr>
 
           <tr>
-              <td>ÓïÑÔ</td>
+              <td>è¯­è¨€</td>
               <td>{{msg["data"]["species"].Language}}</td>
           </tr>
 
           <tr>
-              <td>´´ÔìÊ±¼ä</td>
+              <td>åˆ›é€ æ—¶é—´</td>
               <td>{{msg["data"]["species"].Created}}</td>
           </tr>
 
           <tr>
-              <td>¸üĞÂÊ±¼ä</td>
+              <td>æ›´æ–°æ—¶é—´</td>
               <td>{{msg["data"]["species"].Edited}}</td>
           </tr>
 
@@ -68,7 +68,7 @@
           </tr>
 
           <tr>
-              <td>ÈËÀà</td>
+              <td>äººç±»</td>
               <td>
               <a v-for="item in msgtmp.PeopleURLs" :key="item">
                   {{ item }}
@@ -78,7 +78,7 @@
           </tr>
 
           <tr>
-              <td>µçÓ°</td>
+              <td>ç”µå½±</td>
               <td>
               <a v-for="item in msgtmp.FilmURLs" :key="item">
                   {{ item }}

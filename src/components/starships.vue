@@ -3,57 +3,57 @@
       <h1 align="center"> starships </h1>
       <table border="1" class="table table-bordered table-striped text-center">
           <tr>
-              <td>Ãû³Æ</td>
+              <td>åç§°</td>
               <td>{{msg["data"]["starships"].Name}}</td>
           </tr>
 
           <tr>
-              <td>Ä£ĞÍ</td>
+              <td>æ¨¡å‹</td>
               <td>{{msg["data"]["starships"].Model}}</td>
           </tr>
 
           <tr>
-              <td>ÖÆÔìÉÌ</td>
+              <td>åˆ¶é€ å•†</td>
               <td>{{msg["data"]["starships"].Manufacturer}}</td>
           </tr>
 
           <tr>
-              <td>³É±¾</td>
+              <td>æˆæœ¬</td>
               <td>{{msg["data"]["starships"].CostInCredits}}</td>
           </tr>
 
           <tr>
-              <td>³¤¶È</td>
+              <td>é•¿åº¦</td>
               <td>{{msg["data"]["starships"].Length}}</td>
           </tr>
 
           <tr>
-              <td>×î¸ßÊ±ËÙ</td>
+              <td>æœ€é«˜æ—¶é€Ÿ</td>
               <td>{{msg["data"]["starships"].MaxAtmospheringSpeed}}</td>
           </tr>
 
           <tr>
-              <td>»ú×éÈËÔ±</td>
+              <td>æœºç»„äººå‘˜</td>
               <td>{{msg["data"]["starships"].Crew}}</td>
           </tr>
 
           <tr>
-              <td>³Ë¿Í</td>
+              <td>ä¹˜å®¢</td>
               <td>{{msg["data"]["starships"].Passengers}}</td>
           </tr>
 
           <tr>
-              <td>×°ÔËÄÜÁ¦</td>
+              <td>è£…è¿èƒ½åŠ›</td>
               <td>{{msg["data"]["starships"].CargoCapacity}}</td>
           </tr>
 
           <tr>
-              <td>ÏûºÄ</td>
+              <td>æ¶ˆè€—</td>
               <td>{{msg["data"]["starships"].Consumables}}</td>
           </tr>
 
           <tr>
-              <td>³¬Çı¶¯µÈ¼¶</td>
+              <td>è¶…é©±åŠ¨ç­‰çº§</td>
               <td>{{msg["data"]["starships"].HyperdriveRating}}</td>
           </tr>
 
@@ -63,17 +63,17 @@
           </tr>
 
           <tr>
-              <td>·É´¬µÈ¼¶</td>
+              <td>é£èˆ¹ç­‰çº§</td>
               <td>{{msg["data"]["starships"].StarshipClass}}</td>
           </tr>
 
           <tr>
-              <td>´´ÔìÊ±¼ä</td>
+              <td>åˆ›é€ æ—¶é—´</td>
               <td>{{msg["data"]["starships"].creCreatedated}}</td>
           </tr>
 
           <tr>
-              <td>¸üĞÂÊ±¼ä</td>
+              <td>æ›´æ–°æ—¶é—´</td>
               <td>{{msg["data"]["starships"].Edited}}</td>
           </tr>
 
@@ -83,7 +83,7 @@
           </tr>
 
           <tr>
-              <td>·ÉĞĞÔ±</td>
+              <td>é£è¡Œå‘˜</td>
               <td>
               <a v-for="item in msgtmp.PilotURLs" :key="item">
                   {{ item }}
@@ -93,7 +93,7 @@
           </tr>
 
           <tr>
-              <td>µçÓ°</td>
+              <td>ç”µå½±</td>
               <td>
               <a v-for="item in msgtmp.FilmURLs" :key="item">
                   {{ item }}

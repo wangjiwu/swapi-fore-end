@@ -3,7 +3,7 @@
       <h1 align="center"> films </h1>
       <table border="1" class="table table-bordered table-striped text-center">
           <tr>
-              <td>Ãû³Æ</td>
+              <td>åç§°</td>
               <td>{{msg["data"]["films"].Title}}</td>
           </tr>
 
@@ -13,32 +13,32 @@
           </tr>
 
           <tr>
-              <td>¿ª¶Ë</td>
+              <td>å¼€ç«¯</td>
               <td>{{msg["data"]["films"].OpeningCrawl}}</td>
           </tr>
 
           <tr>
-              <td>µ¼Ñİ</td>
+              <td>å¯¼æ¼”</td>
               <td>{{msg["data"]["films"].Director}}</td>
           </tr>
 
           <tr>
-              <td>ÖÆ×÷ÈË</td>
+              <td>åˆ¶ä½œäºº</td>
               <td>{{msg["data"]["films"].Producer}}</td>
           </tr>
 
           <tr>
-              <td>ÉÏÓ³Ê±¼ä</td>
+              <td>ä¸Šæ˜ æ—¶é—´</td>
               <td>{{msg["data"]["films"].release_date}}</td>
           </tr>
 
           <tr>
-              <td>´´ÔìÊ±¼ä</td>
+              <td>åˆ›é€ æ—¶é—´</td>
               <td>{{msg["data"]["films"].Created}}</td>
           </tr>
 
           <tr>
-              <td>¸üĞÂÊ±¼ä</td>
+              <td>æ›´æ–°æ—¶é—´</td>
               <td>{{msg["data"]["films"].Edited}}</td>
           </tr>
 
@@ -48,7 +48,7 @@
           </tr>
 
           <tr>
-              <td>ÌØÕ÷</td>
+              <td>ç‰¹å¾</td>
               <td>
               <a v-for="item in msgtmp.CharacterURLs" :key="item">
                   {{ item }}
@@ -58,7 +58,7 @@
           </tr>
 
           <tr>
-              <td>ĞÇÇò</td>
+              <td>æ˜Ÿçƒ</td>
               <td>
               <a v-for="item in msgtmp.PlanetURLs" :key="item">
                   {{ item }}
@@ -68,7 +68,7 @@
           </tr>
 
           <tr>
-              <td>·É´¬</td>
+              <td>é£èˆ¹</td>
               <td>
               <a v-for="item in msgtmp.StarshipURLs" :key="item">
                   {{ item }}
@@ -78,7 +78,7 @@
           </tr>
 
           <tr>
-              <td>ÔËÔØ¹¤¾ß</td>
+              <td>è¿è½½å·¥å…·</td>
               <td>
               <a v-for="item in msgtmp.VehicleURLs" :key="item">
                   {{ item }}
@@ -88,7 +88,7 @@
           </tr>
 
           <tr>
-              <td>ÎïÖÖ</td>
+              <td>ç‰©ç§</td>
               <td>
               <a v-for="item in msgtmp.SpeciesURLs" :key="item">
                   {{ item }}

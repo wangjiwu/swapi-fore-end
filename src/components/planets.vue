@@ -3,57 +3,57 @@
       <h1 align="center"> planets </h1>
       <table border="1" class="table table-bordered table-striped text-center">
           <tr>
-              <td>Ãû³Æ</td>
+              <td>åç§°</td>
               <td>{{msg["data"]["planets"].Name}}</td>
           </tr>
 
           <tr>
-              <td>Ğı×ªÖÜÆÚ</td>
+              <td>æ—‹è½¬å‘¨æœŸ</td>
               <td>{{msg["data"]["planets"].RotationPeriod}}</td>
           </tr>
 
           <tr>
-              <td>¹ìµÀÖÜÆÚ</td>
+              <td>è½¨é“å‘¨æœŸ</td>
               <td>{{msg["data"]["planets"].OrbitalPeriod}}</td>
           </tr>
 
           <tr>
-              <td>Ö±¾¶</td>
+              <td>ç›´å¾„</td>
               <td>{{msg["data"]["planets"].Diameter}}</td>
           </tr>
 
           <tr>
-              <td>Æøºò</td>
+              <td>æ°”å€™</td>
               <td>{{msg["data"]["planets"].Climate}}</td>
           </tr>
 
           <tr>
-              <td>ÖØÁ¦</td>
+              <td>é‡åŠ›</td>
               <td>{{msg["data"]["planets"].Gravity}}</td>
           </tr>
 
           <tr>
-              <td>µØĞÎ</td>
+              <td>åœ°å½¢</td>
               <td>{{msg["data"]["planets"].Terrain}}</td>
           </tr>
 
           <tr>
-              <td>µØ±íË®Á¿</td>
+              <td>åœ°è¡¨æ°´é‡</td>
               <td>{{msg["data"]["planets"].SurfaceWater}}</td>
           </tr>
 
           <tr>
-              <td>ÈË¿Ú</td>
+              <td>äººå£</td>
               <td>{{msg["data"]["planets"].Population}}</td>
           </tr>
 
           <tr>
-              <td>´´ÔìÊ±¼ä</td>
+              <td>åˆ›é€ æ—¶é—´</td>
               <td>{{msg["data"]["planets"].Created}}</td>
           </tr>
 
           <tr>
-              <td>¸üĞÂÊ±¼ä</td>
+              <td>æ›´æ–°æ—¶é—´</td>
               <td>{{msg["data"]["planets"].Edited}}</td>
           </tr>
 
@@ -63,7 +63,7 @@
           </tr>
 
           <tr>
-              <td>¾ÓÃñ</td>
+              <td>å±…æ°‘</td>
               <td>
               <a v-for="item in msgtmp.ResidentURLs" :key="item">
                   {{ item }}
@@ -73,7 +73,7 @@
           </tr>
 
           <tr>
-              <td>µçÓ°</td>
+              <td>ç”µå½±</td>
               <td>
               <a v-for="item in msgtmp.FilmURLs" :key="item">
                   {{ item }}

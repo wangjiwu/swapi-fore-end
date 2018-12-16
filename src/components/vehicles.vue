@@ -3,67 +3,67 @@
       <h1 align="center"> vehicles </h1>
       <table border="1" class="table table-bordered table-striped text-center">
           <tr>
-              <td>Ãû³Æ</td>
+              <td>åç§°</td>
               <td>{{msg["data"]["vehicles"].Name}}</td>
           </tr>
 
           <tr>
-              <td>Ä£ĞÍ</td>
+              <td>æ¨¡å‹</td>
               <td>{{msg["data"]["vehicles"].Model}}</td>
           </tr>
 
           <tr>
-              <td>ÖÆÔìÉÌ</td>
+              <td>åˆ¶é€ å•†</td>
               <td>{{msg["data"]["vehicles"].Manufacturer}}</td>
           </tr>
 
           <tr>
-              <td>×î¸ßÊ±ËÙ</td>
+              <td>æœ€é«˜æ—¶é€Ÿ</td>
               <td>{{msg["data"]["vehicles"].CostInCredits}}</td>
           </tr>
 
           <tr>
-              <td>³¤¶È</td>
+              <td>é•¿åº¦</td>
               <td>{{msg["data"]["vehicles"].Length}}</td>
           </tr>
 
           <tr>
-              <td>×î¸ßÌ«¿Õ·ÉĞĞËÙ¶È</td>
+              <td>æœ€é«˜å¤ªç©ºé£è¡Œé€Ÿåº¦</td>
               <td>{{msg["data"]["vehicles"].MaxAtmospheringSpeed}}</td>
           </tr>
 
           <tr>
-              <td>»ú×éÈËÔ±</td>
+              <td>æœºç»„äººå‘˜</td>
               <td>{{msg["data"]["vehicles"].Crew}}</td>
           </tr>
 
           <tr>
-              <td>³Ë¿Í</td>
+              <td>ä¹˜å®¢</td>
               <td>{{msg["data"]["vehicles"].Passengers}}</td>
           </tr>
 
           <tr>
-              <td>×°ÔËÄÜÁ¦</td>
+              <td>è£…è¿èƒ½åŠ›</td>
               <td>{{msg["data"]["vehicles"].CargoCapacity}}</td>
           </tr>
 
           <tr>
-              <td>ÏûºÄ</td>
+              <td>æ¶ˆè€—</td>
               <td>{{msg["data"]["vehicles"].Consumables}}</td>
           </tr>
 
           <tr>
-              <td>µÈ¼¶</td>
+              <td>ç­‰çº§</td>
               <td>{{msg["data"]["vehicles"].VehicleClass}}</td>
           </tr>
 
           <tr>
-              <td>´´ÔìÊ±¼ä</td>
+              <td>åˆ›é€ æ—¶é—´</td>
               <td>{{msg["data"]["vehicles"].Created}}</td>
           </tr>
 
           <tr>
-              <td>¸üĞÂÊ±¼ä</td>
+              <td>æ›´æ–°æ—¶é—´</td>
               <td>{{msg["data"]["vehicles"].Edited}}</td>
           </tr>
 
@@ -73,7 +73,7 @@
           </tr>
 
           <tr>
-              <td>·ÉĞĞÔ±</td>
+              <td>é£è¡Œå‘˜</td>
               <td>
               <a v-for="item in msgtmp.PilotURLs" :key="item">
                   {{ item }}
@@ -83,7 +83,7 @@
           </tr>
 
           <tr>
-              <td>µçÓ°</td>
+              <td>ç”µå½±</td>
               <td>
               <a v-for="item in msgtmp.FilmURLs" :key="item">
                   {{ item }}
