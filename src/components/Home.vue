@@ -97,34 +97,34 @@ export default {
       if (that.url.indexOf("people") != -1){
         that.showCode[0] = true
         serarch_id = that.url.replace("people/", "").replace("/", "")
-        urlStr =  "http://localhost:3000/graphql?query={people(id:" + serarch_id +  "){Name,Height,Mass,HairColor,SkinColor,EyeColor,BirthYear,Gender,Homeworld,FilmURLs,SpeciesURLs,VehicleURLs,StarshipURLs,Created,Edited,URL,}}"
+        urlStr =  "/api/graphql?query={people(id:" + serarch_id +  "){Name,Height,Mass,HairColor,SkinColor,EyeColor,BirthYear,Gender,Homeworld,FilmURLs,SpeciesURLs,VehicleURLs,StarshipURLs,Created,Edited,URL,}}"
         
 
       } else if (that.url.indexOf("planets") != -1){
         that.showCode[1] = true;
         serarch_id = that.url.replace("planets/", "").replace("/", "")
-        urlStr = "http://localhost:3000/graphql?query={planets(id:" + serarch_id +  "){Name,RotationPeriod,OrbitalPeriod,Diameter,Climate,Gravity,Terrain,SurfaceWater,Population,ResidentURLs,FilmURLs,Created,Edited,URL,}}"
+        urlStr = "/api/graphql?query={planets(id:" + serarch_id +  "){Name,RotationPeriod,OrbitalPeriod,Diameter,Climate,Gravity,Terrain,SurfaceWater,Population,ResidentURLs,FilmURLs,Created,Edited,URL,}}"
 
       } else if (that.url.indexOf("films") != -1){
         that.showCode[2] = true;
         serarch_id = that.url.replace("films/", "").replace("/", "")
-        urlStr = "http://localhost:3000/graphql?query={films(id:" + serarch_id + "){Title,EpisodeID,OpeningCrawl,Director,Producer,CharacterURLs,PlanetURLs,StarshipURLs,VehicleURLs,SpeciesURLs,Created,Edited,URL,}}"
+        urlStr = "/api/graphql?query={films(id:" + serarch_id + "){Title,EpisodeID,OpeningCrawl,Director,Producer,CharacterURLs,PlanetURLs,StarshipURLs,VehicleURLs,SpeciesURLs,Created,Edited,URL,}}"
 
       } else if (that.url.indexOf("species") != -1){
         that.showCode[3] = true;
         serarch_id = that.url.replace("species/", "").replace("/", "")
-        urlStr = "http://localhost:3000/graphql?query={Species(id:" + serarch_id + "){Name,Classification,Designation,AverageHeight,SkinColors,HairColors,EyeColors,AverageLifespan,Homeworld,Language,PeopleURLs,FilmURLs,Created,Edited,URL,}}"
+        urlStr = "/api/graphql?query={Species(id:" + serarch_id + "){Name,Classification,Designation,AverageHeight,SkinColors,HairColors,EyeColors,AverageLifespan,Homeworld,Language,PeopleURLs,FilmURLs,Created,Edited,URL,}}"
 
       } else if (that.url.indexOf("vehicles") != -1){
         that.showCode[4] = true;
         serarch_id = that.url.replace("vehicles/", "").replace("/", "")
-        urlStr = "http://localhost:3000/graphql?query={vehicles(id:"+ serarch_id +"){Name,Model,Manufacturer,CostInCredits,Length,MaxAtmospheringSpeed,Crew,Passengers,CargoCapacity,Consumables,VehicleClass,PilotURLs,FilmURLs,Created,Edited,URL,}}"
+        urlStr = "/api/graphql?query={vehicles(id:"+ serarch_id +"){Name,Model,Manufacturer,CostInCredits,Length,MaxAtmospheringSpeed,Crew,Passengers,CargoCapacity,Consumables,VehicleClass,PilotURLs,FilmURLs,Created,Edited,URL,}}"
 
       } else if (that.url.indexOf("starships") != -1){
         that.showCode[5] = true;
 
         serarch_id = that.url.replace("starships/", "").replace("/", "")
-        urlStr = "http://localhost:3000/graphql?query={starships(id:" + serarch_id + "){Name,Model,Manufacturer,CostInCredits,Length,MaxAtmospheringSpeed,Crew,Passengers,CargoCapacity,Consumables,HyperdriveRating,MGLT,StarshipClass,PilotURLs,FilmURLs,Created,Edited,URL,}}"
+        urlStr = "/api/graphql?query={starships(id:" + serarch_id + "){Name,Model,Manufacturer,CostInCredits,Length,MaxAtmospheringSpeed,Crew,Passengers,CargoCapacity,Consumables,HyperdriveRating,MGLT,StarshipClass,PilotURLs,FilmURLs,Created,Edited,URL,}}"
 
       }
 
@@ -132,8 +132,10 @@ export default {
      
       that.axios.get(urlStr)
       .then(function(res) {
-        //console.log(res.data)
-        that.sites = res.data
+        console.log(res.data["data"]["people"])
+        that.sites = res.data["data"]["people"]
+        console.log(res.data["data"]["people"].BirthYear)
+
 
       })
 
