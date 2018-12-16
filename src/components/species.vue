@@ -3,68 +3,68 @@
       <h1 align="center"> species </h1>
       <table border="1" class="table table-bordered table-striped text-center">
           <tr>
-              <td>name</td>
-              <td>{{msg.name}}</td>
+              <td>Name</td>
+              <td>{{msg["data"]["species"].Name}}</td>
           </tr>
 
           <tr>
-              <td>classification</td>
-              <td>{{msg.classification}}</td>
+              <td>Classification</td>
+              <td>{{msg["data"]["species"].Classification}}</td>
           </tr>
 
           <tr>
-              <td>designation</td>
-              <td>{{msg.designation}}</td>
+              <td>Designation</td>
+              <td>{{msg["data"]["species"].Designation}}</td>
           </tr>
 
           <tr>
-              <td>average_height</td>
-              <td>{{msg.average_height}}</td>
+              <td>AverageHeight</td>
+              <td>{{msg["data"]["species"].AverageHeight}}</td>
           </tr>
 
           <tr>
-              <td>skin_colors</td>
-              <td>{{msg.skin_colors}}</td>
+              <td>SkinColors</td>
+              <td>{{msg["data"]["species"].SkinColors}}</td>
           </tr>
 
           <tr>
-              <td>hair_colors</td>
-              <td>{{msg.hair_colors}}</td>
+              <td>HairColors</td>
+              <td>{{msg["data"]["species"].HairColors}}</td>
           </tr>
 
           <tr>
-              <td>eye_colors</td>
-              <td>{{msg.eye_colors}}</td>
+              <td>EyeColors</td>
+              <td>{{msg["data"]["species"].EyeColors}}</td>
           </tr>
 
           <tr>
-              <td>average_lifespan</td>
-              <td>{{msg.average_lifespan}}</td>
+              <td>AverageLifespan</td>
+              <td>{{msg["data"]["species"].AverageLifespan}}</td>
           </tr>
 
           <tr>
-              <td>homeworld</td>
-              <td>{{msg.homeworld}}</td>
+              <td>Homeworld</td>
+              <td>{{msg["data"]["species"].Homeworld}}</td>
           </tr>
 
           <tr>
-              <td>language</td>
-              <td>{{msg.language}}</td>
+              <td>Language</td>
+              <td>{{msg["data"]["species"].Language}}</td>
           </tr>
 
           <tr>
-              <td>created</td>
-              <td>{{msg.created}}</td>
+              <td>Created</td>
+              <td>{{msg["data"]["species"].Created}}</td>
           </tr>
 
           <tr>
-              <td>edited</td>
-              <td>{{msg.edited}}</td>
+              <td>Edited</td>
+              <td>{{msg["data"]["species"].Edited}}</td>
           </tr>
 
           <tr>
-              <td>url</td>
-              <td>{{msg.url}}</td>
+              <td>URL</td>
+              <td>{{msg["data"]["species"].URL}}</td>
           </tr>
 
           <tr>

@@ -2,54 +2,54 @@
   <div>
       <h1 align="center"  > 人物介绍 </h1>
     <table class="table table-bordered table-striped text-center" border="1" > 
+        <tr>
+            <td>Name</td>
+            <td>{{msg["data"]["people"].Name}}</td>
+        </tr>
       <tr>
-        <td>name</td>
-        <td>{{msg.name}}</td>
+          <td>Height</td>
+          <td>{{msg["data"]["people"].Height}}</td>
       </tr>
       <tr>
-        <td>height</td>
-        <td>{{msg.height}}</td>
+          <td>Mass</td>
+          <td>{{msg["data"]["people"].Mass}}</td>
       </tr>
       <tr>
-        <td>mass</td>
-        <td>{{msg.mass}}</td>
+          <td>HairColor</td>
+          <td>{{msg["data"]["people"].HairColor}}</td>
       </tr>
       <tr>
-        <td>hair_color</td>
-        <td>{{msg.hair_color}}</td>
+          <td>SkinColor</td>
+          <td>{{msg["data"]["people"].SkinColor}}</td>
       </tr>
       <tr>
-        <td>skin_color</td>
-        <td>{{msg.skin_color}}</td>
+          <td>EyeColor</td>
+          <td>{{msg["data"]["people"].EyeColor}}</td>
       </tr>
       <tr>
-        <td>eye_color</td>
-        <td>{{msg.eye_color}}</td>
+          <td>BirthYear</td>
+          <td>{{msg["data"]["people"].BirthYear}}</td>
       </tr>
       <tr>
-        <td>birth_year</td>
-        <td>{{msg.birth_year}}</td>
+          <td>Gender</td>
+          <td>{{msg["data"]["people"].Gender}}</td>
       </tr>
       <tr>
-        <td>gender</td>
-        <td>{{msg.gender}}</td>
+          <td>Homeworld</td>
+          <a>{{msg["data"]["people"].Homeworld}}</a>
       </tr>
       <tr>
-        <td>homeworld</td>
-        <a >{{msg.homeworld}}</a>
+          <td>Created</td>
+          <td>{{msg["data"]["people"].Created}}</td>
       </tr>
       <tr>
-        <td>created</td>
-        <td>{{msg.created}}</td>
+          <td>Edited</td>
+          <td>{{msg["data"]["people"].Edited}}</td>
       </tr>
       <tr>
-        <td>edited</td>
-        <td>{{msg.edited}}</td>
-      </tr>
-      <tr>
-        <td>url</td>
+          <td>URL</td>
         
-        <a >{{msg.url}}</a>
+          <a>{{msg["data"]["people"].URL}}</a>
       </tr>
 
       <tr>

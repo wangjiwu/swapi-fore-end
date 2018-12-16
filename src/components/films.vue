@@ -3,48 +3,48 @@
       <h1 align="center"> films </h1>
       <table border="1" class="table table-bordered table-striped text-center">
           <tr>
-              <td>title</td>
-              <td>{{msg.title}}</td>
+              <td>Title</td>
+              <td>{{msg["data"]["films"].Title}}</td>
           </tr>
 
           <tr>
-              <td>episode_id</td>
-              <td>{{msg.episode_id}}</td>
+              <td>EpisodeID</td>
+              <td>{{msg["data"]["films"].EpisodeID}}</td>
           </tr>
 
           <tr>
-              <td>opening_crawl</td>
-              <td>{{msg.opening_crawl}}</td>
+              <td>OpeningCrawl</td>
+              <td>{{msg["data"]["films"].OpeningCrawl}}</td>
           </tr>
 
           <tr>
-              <td>director</td>
-              <td>{{msg.director}}</td>
+              <td>Director</td>
+              <td>{{msg["data"]["films"].Director}}</td>
           </tr>
 
           <tr>
-              <td>producer</td>
-              <td>{{msg.producer}}</td>
+              <td>Producer</td>
+              <td>{{msg["data"]["films"].Producer}}</td>
           </tr>
 
           <tr>
               <td>release_date</td>
-              <td>{{msg.release_date}}</td>
+              <td>{{msg["data"]["films"].release_date}}</td>
           </tr>
 
           <tr>
-              <td>created</td>
-              <td>{{msg.created}}</td>
+              <td>Created</td>
+              <td>{{msg["data"]["films"].Created}}</td>
           </tr>
 
           <tr>
-              <td>edited</td>
-              <td>{{msg.edited}}</td>
+              <td>Edited</td>
+              <td>{{msg["data"]["films"].Edited}}</td>
           </tr>
 
           <tr>
-              <td>url</td>
-              <td>{{msg.url}}</td>
+              <td>URL</td>
+              <td>{{msg["data"]["films"].URL}}</td>
           </tr>
 
           <tr>

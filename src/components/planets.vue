@@ -3,69 +3,69 @@
       <h1 align="center"> planets </h1>
       <table border="1" class="table table-bordered table-striped text-center">
           <tr>
-              <td>name</td>
-              <td>{{msg.name}}</td>
+              <td>Name</td>
+              <td>{{msg["data"]["planets"].Name}}</td>
           </tr>
 
           <tr>
-              <td>rotation_period</td>
-              <td>{{msg.rotation_period}}</td>
+              <td>RotationPeriod</td>
+              <td>{{msg["data"]["planets"].RotationPeriod}}</td>
           </tr>
 
           <tr>
-              <td>orbital_period</td>
-              <td>{{msg.orbital_period}}</td>
+              <td>OrbitalPeriod</td>
+              <td>{{msg["data"]["planets"].OrbitalPeriod}}</td>
           </tr>
 
           <tr>
-              <td>diameter</td>
-              <td>{{msg.diameter}}</td>
+              <td>Diameter</td>
+              <td>{{msg["data"]["planets"].Diameter}}</td>
           </tr>
 
           <tr>
-              <td>climate</td>
-              <td>{{msg.climate}}</td>
+              <td>Climate</td>
+              <td>{{msg["data"]["planets"].Climate}}</td>
           </tr>
 
           <tr>
-              <td>gravity</td>
-              <td>{{msg.gravity}}</td>
+              <td>Gravity</td>
+              <td>{{msg["data"]["planets"].Gravity}}</td>
           </tr>
 
           <tr>
-              <td>terrain</td>
-              <td>{{msg.terrain}}</td>
+              <td>Terrain</td>
+              <td>{{msg["data"]["planets"].Terrain}}</td>
           </tr>
 
           <tr>
-              <td>surface_water</td>
-              <td>{{msg.surface_water}}</td>
+              <td>SurfaceWater</td>
+              <td>{{msg["data"]["planets"].SurfaceWater}}</td>
           </tr>
 
           <tr>
-              <td>population</td>
-              <td>{{msg.population}}</td>
+              <td>Population</td>
+              <td>{{msg["data"]["planets"].Population}}</td>
           </tr>
 
           <tr>
-              <td>created</td>
-              <td>{{msg.created}}</td>
+              <td>Created</td>
+              <td>{{msg["data"]["planets"].Created}}</td>
           </tr>
 
           <tr>
-              <td>edited</td>
-              <td>{{msg.edited}}</td>
+              <td>Edited</td>
+              <td>{{msg["data"]["planets"].Edited}}</td>
           </tr>
 
           <tr>
-              <td>url</td>
-              <td>{{msg.url}}</td>
+              <td>URL</td>
+              <td>{{msg["data"]["planets"].URL}}</td>
           </tr>
 
           <tr>
               <td>residents</td>
               <td>
-              <a v-for="item in msg.residents" :key="item">
+              <a v-for="item in msg[\"data\"][\"planets\"].residents" :key="item">
                   {{ item }}
                   <br>
               </a>

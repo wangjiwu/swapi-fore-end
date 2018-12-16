@@ -3,83 +3,83 @@
       <h1 align="center"> starships </h1>
       <table border="1" class="table table-bordered table-striped text-center">
           <tr>
-              <td>name</td>
-              <td>{{msg.name}}</td>
+              <td>Name</td>
+              <td>{{msg["data"]["starships"].Name}}</td>
           </tr>
 
           <tr>
-              <td>model</td>
-              <td>{{msg.model}}</td>
+              <td>Model</td>
+              <td>{{msg["data"]["starships"].Model}}</td>
           </tr>
 
           <tr>
-              <td>manufacturer</td>
-              <td>{{msg.manufacturer}}</td>
+              <td>Manufacturer</td>
+              <td>{{msg["data"]["starships"].Manufacturer}}</td>
           </tr>
 
           <tr>
-              <td>cost_in_credits</td>
-              <td>{{msg.cost_in_credits}}</td>
+              <td>CostInCredits</td>
+              <td>{{msg["data"]["starships"].CostInCredits}}</td>
           </tr>
 
           <tr>
-              <td>length</td>
-              <td>{{msg.length}}</td>
+              <td>Length</td>
+              <td>{{msg["data"]["starships"].Length}}</td>
           </tr>
 
           <tr>
-              <td>max_atmosphering_speed</td>
-              <td>{{msg.max_atmosphering_speed}}</td>
+              <td>MaxAtmospheringSpeed</td>
+              <td>{{msg["data"]["starships"].MaxAtmospheringSpeed}}</td>
           </tr>
 
           <tr>
-              <td>crew</td>
-              <td>{{msg.crew}}</td>
+              <td>Crew</td>
+              <td>{{msg["data"]["starships"].Crew}}</td>
           </tr>
 
           <tr>
-              <td>passengers</td>
-              <td>{{msg.passengers}}</td>
+              <td>Passengers</td>
+              <td>{{msg["data"]["starships"].Passengers}}</td>
           </tr>
 
           <tr>
-              <td>cargo_capacity</td>
-              <td>{{msg.cargo_capacity}}</td>
+              <td>CargoCapacity</td>
+              <td>{{msg["data"]["starships"].CargoCapacity}}</td>
           </tr>
 
           <tr>
-              <td>consumables</td>
-              <td>{{msg.consumables}}</td>
+              <td>Consumables</td>
+              <td>{{msg["data"]["starships"].Consumables}}</td>
           </tr>
 
           <tr>
-              <td>hyperdrive_rating</td>
-              <td>{{msg.hyperdrive_rating}}</td>
+              <td>HyperdriveRating</td>
+              <td>{{msg["data"]["starships"].HyperdriveRating}}</td>
           </tr>
 
           <tr>
               <td>MGLT</td>
-              <td>{{msg.MGLT}}</td>
+              <td>{{msg["data"]["starships"].MGLT}}</td>
           </tr>
 
           <tr>
-              <td>starship_class</td>
-              <td>{{msg.starship_class}}</td>
+              <td>StarshipClass</td>
+              <td>{{msg["data"]["starships"].StarshipClass}}</td>
           </tr>
 
           <tr>
-              <td>created</td>
-              <td>{{msg.created}}</td>
+              <td>Created</td>
+              <td>{{msg["data"]["starships"].creCreatedated}}</td>
           </tr>
 
           <tr>
-              <td>edited</td>
-              <td>{{msg.edited}}</td>
+              <td>Edited</td>
+              <td>{{msg["data"]["starships"].Edited}}</td>
           </tr>
 
           <tr>
-              <td>url</td>
-              <td>{{msg.url}}</td>
+              <td>URL</td>
+              <td>{{msg["data"]["starships"].URL}}</td>
           </tr>
 
           <tr>

@@ -3,73 +3,73 @@
       <h1 align="center"> vehicles </h1>
       <table border="1" class="table table-bordered table-striped text-center">
           <tr>
-              <td>name</td>
-              <td>{{msg.name}}</td>
+              <td>Name</td>
+              <td>{{msg["data"]["vehicles"].Name}}</td>
           </tr>
 
           <tr>
-              <td>model</td>
-              <td>{{msg.model}}</td>
+              <td>Model</td>
+              <td>{{msg["data"]["vehicles"].Model}}</td>
           </tr>
 
           <tr>
-              <td>manufacturer</td>
-              <td>{{msg.manufacturer}}</td>
+              <td>Manufacturer</td>
+              <td>{{msg["data"]["vehicles"].Manufacturer}}</td>
           </tr>
 
           <tr>
-              <td>cost_in_credits</td>
-              <td>{{msg.cost_in_credits}}</td>
+              <td>CostInCredits</td>
+              <td>{{msg["data"]["vehicles"].CostInCredits}}</td>
           </tr>
 
           <tr>
-              <td>length</td>
-              <td>{{msg.length}}</td>
+              <td>Length</td>
+              <td>{{msg["data"]["vehicles"].Length}}</td>
           </tr>
 
           <tr>
-              <td>max_atmosphering_speed</td>
-              <td>{{msg.max_atmosphering_speed}}</td>
+              <td>MaxAtmospheringSpeed</td>
+              <td>{{msg["data"]["vehicles"].MaxAtmospheringSpeed}}</td>
           </tr>
 
           <tr>
-              <td>crew</td>
-              <td>{{msg.crew}}</td>
+              <td>Crew</td>
+              <td>{{msg["data"]["vehicles"].Crew}}</td>
           </tr>
 
           <tr>
-              <td>passengers</td>
-              <td>{{msg.passengers}}</td>
+              <td>Passengers</td>
+              <td>{{msg["data"]["vehicles"].Passengers}}</td>
           </tr>
 
           <tr>
-              <td>cargo_capacity</td>
-              <td>{{msg.cargo_capacity}}</td>
+              <td>CargoCapacity</td>
+              <td>{{msg["data"]["vehicles"].CargoCapacity}}</td>
           </tr>
 
           <tr>
-              <td>consumables</td>
-              <td>{{msg.consumables}}</td>
+              <td>Consumables</td>
+              <td>{{msg["data"]["vehicles"].Consumables}}</td>
           </tr>
 
           <tr>
-              <td>vehicle_class</td>
-              <td>{{msg.vehicle_class}}</td>
+              <td>VehicleClass</td>
+              <td>{{msg["data"]["vehicles"].VehicleClass}}</td>
           </tr>
 
           <tr>
-              <td>created</td>
-              <td>{{msg.created}}</td>
+              <td>Created</td>
+              <td>{{msg["data"]["vehicles"].Created}}</td>
           </tr>
 
           <tr>
-              <td>edited</td>
-              <td>{{msg.edited}}</td>
+              <td>Edited</td>
+              <td>{{msg["data"]["vehicles"].Edited}}</td>
           </tr>
 
           <tr>
-              <td>url</td>
-              <td>{{msg.url}}</td>
+              <td>URL</td>
+              <td>{{msg["data"]["vehicles"].URL}}</td>
           </tr>
 
           <tr>
