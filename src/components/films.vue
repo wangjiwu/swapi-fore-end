@@ -3,42 +3,42 @@
       <h1 align="center"> films </h1>
       <table border="1" class="table table-bordered table-striped text-center">
           <tr>
-              <td>Title</td>
+              <td>名称</td>
               <td>{{msg["data"]["films"].Title}}</td>
           </tr>
 
           <tr>
-              <td>EpisodeID</td>
+              <td>ID</td>
               <td>{{msg["data"]["films"].EpisodeID}}</td>
           </tr>
 
           <tr>
-              <td>OpeningCrawl</td>
+              <td>开端</td>
               <td>{{msg["data"]["films"].OpeningCrawl}}</td>
           </tr>
 
           <tr>
-              <td>Director</td>
+              <td>导演</td>
               <td>{{msg["data"]["films"].Director}}</td>
           </tr>
 
           <tr>
-              <td>Producer</td>
+              <td>制作人</td>
               <td>{{msg["data"]["films"].Producer}}</td>
           </tr>
 
           <tr>
-              <td>release_date</td>
+              <td>上映时间</td>
               <td>{{msg["data"]["films"].release_date}}</td>
           </tr>
 
           <tr>
-              <td>Created</td>
+              <td>创造时间</td>
               <td>{{msg["data"]["films"].Created}}</td>
           </tr>
 
           <tr>
-              <td>Edited</td>
+              <td>更新时间</td>
               <td>{{msg["data"]["films"].Edited}}</td>
           </tr>
 
@@ -48,9 +48,9 @@
           </tr>
 
           <tr>
-              <td>characters</td>
+              <td>特征</td>
               <td>
-              <a v-for="item in msg.characters" :key="item">
+              <a v-for="item in msgtmp.CharacterURLs" :key="item">
                   {{ item }}
                   <br>
               </a>
@@ -58,9 +58,9 @@
           </tr>
 
           <tr>
-              <td>planets</td>
+              <td>星球</td>
               <td>
-              <a v-for="item in msg.planets" :key="item">
+              <a v-for="item in msgtmp.PlanetURLs" :key="item">
                   {{ item }}
                   <br>
               </a>
@@ -68,9 +68,9 @@
           </tr>
 
           <tr>
-              <td>starships</td>
+              <td>飞船</td>
               <td>
-              <a v-for="item in msg.starships" :key="item">
+              <a v-for="item in msgtmp.StarshipURLs" :key="item">
                   {{ item }}
                   <br>
               </a>
@@ -78,9 +78,9 @@
           </tr>
 
           <tr>
-              <td>vehicles</td>
+              <td>运载工具</td>
               <td>
-              <a v-for="item in msg.vehicles" :key="item">
+              <a v-for="item in msgtmp.VehicleURLs" :key="item">
                   {{ item }}
                   <br>
               </a>
@@ -88,9 +88,9 @@
           </tr>
 
           <tr>
-              <td>species</td>
+              <td>物种</td>
               <td>
-              <a v-for="item in msg.species" :key="item">
+              <a v-for="item in msgtmp.SpeciesURLs" :key="item">
                   {{ item }}
                   <br>
               </a>
@@ -110,7 +110,15 @@ export default {
     props:{
         msg : String
 
-    },
+        },
+        data() {
+            return {
+                msgtmp: []
+            }
+        },
+        updated() {
+            this.msgtmp = this.msg["data"]["films"]
+        }
 }
 </script>
 

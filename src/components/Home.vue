@@ -113,7 +113,7 @@ export default {
       } else if (that.url.indexOf("species") != -1){
         that.showCode[3] = true;
         serarch_id = that.url.replace("species/", "").replace("/", "")
-        urlStr = "/api/graphql?query={Species(id:" + serarch_id + "){Name,Classification,Designation,AverageHeight,SkinColors,HairColors,EyeColors,AverageLifespan,Homeworld,Language,PeopleURLs,FilmURLs,Created,Edited,URL,}}"
+        urlStr = "/api/graphql?query={species(id:" + serarch_id + "){Name,Classification,Designation,AverageHeight,SkinColors,HairColors,EyeColors,AverageLifespan,Homeworld,Language,PeopleURLs,FilmURLs,Created,Edited,URL,}}"
 
       } else if (that.url.indexOf("vehicles") != -1){
         that.showCode[4] = true;

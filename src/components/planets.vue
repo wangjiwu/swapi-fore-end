@@ -3,57 +3,57 @@
       <h1 align="center"> planets </h1>
       <table border="1" class="table table-bordered table-striped text-center">
           <tr>
-              <td>Name</td>
+              <td>名称</td>
               <td>{{msg["data"]["planets"].Name}}</td>
           </tr>
 
           <tr>
-              <td>RotationPeriod</td>
+              <td>旋转周期</td>
               <td>{{msg["data"]["planets"].RotationPeriod}}</td>
           </tr>
 
           <tr>
-              <td>OrbitalPeriod</td>
+              <td>轨道周期</td>
               <td>{{msg["data"]["planets"].OrbitalPeriod}}</td>
           </tr>
 
           <tr>
-              <td>Diameter</td>
+              <td>直径</td>
               <td>{{msg["data"]["planets"].Diameter}}</td>
           </tr>
 
           <tr>
-              <td>Climate</td>
+              <td>气候</td>
               <td>{{msg["data"]["planets"].Climate}}</td>
           </tr>
 
           <tr>
-              <td>Gravity</td>
+              <td>重力</td>
               <td>{{msg["data"]["planets"].Gravity}}</td>
           </tr>
 
           <tr>
-              <td>Terrain</td>
+              <td>地形</td>
               <td>{{msg["data"]["planets"].Terrain}}</td>
           </tr>
 
           <tr>
-              <td>SurfaceWater</td>
+              <td>地表水量</td>
               <td>{{msg["data"]["planets"].SurfaceWater}}</td>
           </tr>
 
           <tr>
-              <td>Population</td>
+              <td>人口</td>
               <td>{{msg["data"]["planets"].Population}}</td>
           </tr>
 
           <tr>
-              <td>Created</td>
+              <td>创造时间</td>
               <td>{{msg["data"]["planets"].Created}}</td>
           </tr>
 
           <tr>
-              <td>Edited</td>
+              <td>更新时间</td>
               <td>{{msg["data"]["planets"].Edited}}</td>
           </tr>
 
@@ -63,9 +63,9 @@
           </tr>
 
           <tr>
-              <td>residents</td>
+              <td>居民</td>
               <td>
-              <a v-for="item in msg[\"data\"][\"planets\"].residents" :key="item">
+              <a v-for="item in msgtmp.ResidentURLs" :key="item">
                   {{ item }}
                   <br>
               </a>
@@ -73,9 +73,9 @@
           </tr>
 
           <tr>
-              <td>films</td>
+              <td>电影</td>
               <td>
-              <a v-for="item in msg.films" :key="item">
+              <a v-for="item in msgtmp.FilmURLs" :key="item">
                   {{ item }}
                   <br>
               </a>
@@ -95,7 +95,15 @@ export default {
     props:{
         msg : String
 
-    },
+        },
+        data() {
+            return {
+                msgtmp: []
+            }
+        },
+        updated() {
+            this.msgtmp = this.msg["data"]["films"]
+        }
 }
 </script>
 

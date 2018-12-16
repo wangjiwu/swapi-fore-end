@@ -3,67 +3,67 @@
       <h1 align="center"> vehicles </h1>
       <table border="1" class="table table-bordered table-striped text-center">
           <tr>
-              <td>Name</td>
+              <td>名称</td>
               <td>{{msg["data"]["vehicles"].Name}}</td>
           </tr>
 
           <tr>
-              <td>Model</td>
+              <td>模型</td>
               <td>{{msg["data"]["vehicles"].Model}}</td>
           </tr>
 
           <tr>
-              <td>Manufacturer</td>
+              <td>制造商</td>
               <td>{{msg["data"]["vehicles"].Manufacturer}}</td>
           </tr>
 
           <tr>
-              <td>CostInCredits</td>
+              <td>最高时速</td>
               <td>{{msg["data"]["vehicles"].CostInCredits}}</td>
           </tr>
 
           <tr>
-              <td>Length</td>
+              <td>长度</td>
               <td>{{msg["data"]["vehicles"].Length}}</td>
           </tr>
 
           <tr>
-              <td>MaxAtmospheringSpeed</td>
+              <td>最高太空飞行速度</td>
               <td>{{msg["data"]["vehicles"].MaxAtmospheringSpeed}}</td>
           </tr>
 
           <tr>
-              <td>Crew</td>
+              <td>机组人员</td>
               <td>{{msg["data"]["vehicles"].Crew}}</td>
           </tr>
 
           <tr>
-              <td>Passengers</td>
+              <td>乘客</td>
               <td>{{msg["data"]["vehicles"].Passengers}}</td>
           </tr>
 
           <tr>
-              <td>CargoCapacity</td>
+              <td>装运能力</td>
               <td>{{msg["data"]["vehicles"].CargoCapacity}}</td>
           </tr>
 
           <tr>
-              <td>Consumables</td>
+              <td>消耗</td>
               <td>{{msg["data"]["vehicles"].Consumables}}</td>
           </tr>
 
           <tr>
-              <td>VehicleClass</td>
+              <td>等级</td>
               <td>{{msg["data"]["vehicles"].VehicleClass}}</td>
           </tr>
 
           <tr>
-              <td>Created</td>
+              <td>创造时间</td>
               <td>{{msg["data"]["vehicles"].Created}}</td>
           </tr>
 
           <tr>
-              <td>Edited</td>
+              <td>更新时间</td>
               <td>{{msg["data"]["vehicles"].Edited}}</td>
           </tr>
 
@@ -73,9 +73,9 @@
           </tr>
 
           <tr>
-              <td>pilots</td>
+              <td>飞行员</td>
               <td>
-              <a v-for="item in msg.pilots" :key="item">
+              <a v-for="item in msgtmp.PilotURLs" :key="item">
                   {{ item }}
                   <br>
               </a>
@@ -83,9 +83,9 @@
           </tr>
 
           <tr>
-              <td>films</td>
+              <td>电影</td>
               <td>
-              <a v-for="item in msg.films" :key="item">
+              <a v-for="item in msgtmp.FilmURLs" :key="item">
                   {{ item }}
                   <br>
               </a>
@@ -105,7 +105,15 @@ export default {
     props:{
         msg : String
 
-    },
+        },
+        data() {
+            return {
+                msgtmp: []
+            }
+        },
+        updated() {
+            this.msgtmp = this.msg["data"]["films"]
+        }
 }
 </script>
 

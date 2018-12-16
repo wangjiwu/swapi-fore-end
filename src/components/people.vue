@@ -3,49 +3,60 @@
       <h1 align="center"  > 人物介绍 </h1>
     <table class="table table-bordered table-striped text-center" border="1" > 
         <tr>
-            <td>Name</td>
+            <td>名称</td>
             <td>{{msg["data"]["people"].Name}}</td>
         </tr>
+
       <tr>
-          <td>Height</td>
+          <td>高度</td>
           <td>{{msg["data"]["people"].Height}}</td>
       </tr>
+
       <tr>
-          <td>Mass</td>
+          <td>质量</td>
           <td>{{msg["data"]["people"].Mass}}</td>
       </tr>
+
       <tr>
-          <td>HairColor</td>
+          <td>发色</td>
           <td>{{msg["data"]["people"].HairColor}}</td>
       </tr>
+
       <tr>
-          <td>SkinColor</td>
+          <td>肤色</td>
           <td>{{msg["data"]["people"].SkinColor}}</td>
       </tr>
+
       <tr>
-          <td>EyeColor</td>
+          <td>瞳孔颜色</td>
           <td>{{msg["data"]["people"].EyeColor}}</td>
       </tr>
+
       <tr>
-          <td>BirthYear</td>
+          <td>出生年月</td>
           <td>{{msg["data"]["people"].BirthYear}}</td>
       </tr>
+
       <tr>
-          <td>Gender</td>
+          <td>性别</td>
           <td>{{msg["data"]["people"].Gender}}</td>
       </tr>
+
       <tr>
-          <td>Homeworld</td>
+          <td>家乡</td>
           <a>{{msg["data"]["people"].Homeworld}}</a>
       </tr>
+
       <tr>
-          <td>Created</td>
+          <td>创造时间</td>
           <td>{{msg["data"]["people"].Created}}</td>
       </tr>
+
       <tr>
-          <td>Edited</td>
+          <td>更新时间</td>
           <td>{{msg["data"]["people"].Edited}}</td>
       </tr>
+
       <tr>
           <td>URL</td>
         
@@ -53,36 +64,36 @@
       </tr>
 
       <tr>
-        <td>films</td>
+        <td>电影</td>
         <td>
-         <a v-for="item in msg.films" :key = "item">
+         <a v-for="item in msgtmp.FilmURLs" :key = "item">
             {{ item }}
             <br>
         </a>
         </td>
       </tr>
       <tr>
-        <td>species</td>
+        <td>种类</td>
         <td>
-         <a v-for="item in msg.species" :key = "item">
+         <a v-for="item in msgtmp.SpeciesURLs" :key = "item">
             {{ item }}
             <br>
         </a>
         </td>
       </tr>
       <tr>
-        <td>vehicles</td>
+        <td>运载工具</td>
         <td>
-         <a v-for="item in msg.vehicles" :key = "item">
+         <a v-for="item in msgtmp.VehicleURLs" :key = "item">
             {{ item }}
             <br>
         </a>
         </td>
       </tr>
       <tr>
-        <td>starships</td>
+        <td>飞船</td>
         <td>
-         <a  v-for="item in msg.starships" :key = "item">
+         <a  v-for="item in msgtmp.StarshipURLs" :key = "item">
             {{ item }}
             <br>
         </a>
@@ -105,6 +116,15 @@ export default {
         msg : Object
 
     },
+    data() {
+        return {
+            msgtmp: []
+        }
+    },
+    updated() {
+        this.msgtmp = this.msg["data"]["people"]
+    }
+
 }
 </script>
 
