@@ -85,35 +85,52 @@ export default {
       this.service_call()
     },
     service_call: function() {
-      // var that = this;
-      // var url = "https://swapi.co/api/people/1/?format=json"; 
-      // that.axios.get(url).then(function(response){ //接口返回数据
-      //   console.log(response.data)
-      //   that.sites = response.data;
 
-      // },function(error){
-      //   alert(error)
-      // })
       var that = this;
-      //that.sites = "fuck"
 
       this.showCode = [false, false, false, false, false, false]
 
+      var serarch_id = 0
+      var urlStr = ""
+
+
       if (that.url.indexOf("people") != -1){
-        that.showCode[0] = true;
+        that.showCode[0] = true
+        serarch_id = that.url.replace("people/", "").replace("/", "")
+        urlStr =  "http://localhost:3000/graphql?query={people(id:" + serarch_id +  "){Name,Height,Mass,HairColor,SkinColor,EyeColor,BirthYear,Gender,Homeworld,FilmURLs,SpeciesURLs,VehicleURLs,StarshipURLs,Created,Edited,URL,}}"
+        
+
       } else if (that.url.indexOf("planets") != -1){
         that.showCode[1] = true;
+        serarch_id = that.url.replace("planets/", "").replace("/", "")
+        urlStr = "http://localhost:3000/graphql?query={planets(id:" + serarch_id +  "){Name,RotationPeriod,OrbitalPeriod,Diameter,Climate,Gravity,Terrain,SurfaceWater,Population,ResidentURLs,FilmURLs,Created,Edited,URL,}}"
+
       } else if (that.url.indexOf("films") != -1){
         that.showCode[2] = true;
+        serarch_id = that.url.replace("films/", "").replace("/", "")
+        urlStr = "http://localhost:3000/graphql?query={films(id:" + serarch_id + "){Title,EpisodeID,OpeningCrawl,Director,Producer,CharacterURLs,PlanetURLs,StarshipURLs,VehicleURLs,SpeciesURLs,Created,Edited,URL,}}"
+
       } else if (that.url.indexOf("species") != -1){
         that.showCode[3] = true;
+        serarch_id = that.url.replace("species/", "").replace("/", "")
+        urlStr = "http://localhost:3000/graphql?query={Species(id:" + serarch_id + "){Name,Classification,Designation,AverageHeight,SkinColors,HairColors,EyeColors,AverageLifespan,Homeworld,Language,PeopleURLs,FilmURLs,Created,Edited,URL,}}"
+
       } else if (that.url.indexOf("vehicles") != -1){
         that.showCode[4] = true;
+        serarch_id = that.url.replace("vehicles/", "").replace("/", "")
+        urlStr = "http://localhost:3000/graphql?query={vehicles(id:"+ serarch_id +"){Name,Model,Manufacturer,CostInCredits,Length,MaxAtmospheringSpeed,Crew,Passengers,CargoCapacity,Consumables,VehicleClass,PilotURLs,FilmURLs,Created,Edited,URL,}}"
+
       } else if (that.url.indexOf("starships") != -1){
         that.showCode[5] = true;
+
+        serarch_id = that.url.replace("starships/", "").replace("/", "")
+        urlStr = "http://localhost:3000/graphql?query={starships(id:" + serarch_id + "){Name,Model,Manufacturer,CostInCredits,Length,MaxAtmospheringSpeed,Crew,Passengers,CargoCapacity,Consumables,HyperdriveRating,MGLT,StarshipClass,PilotURLs,FilmURLs,Created,Edited,URL,}}"
+
       }
 
-      that.axios.get("https://swapi.co/api/" + that.url + "?format=json")
+      console.log(urlStr)
+     
+      that.axios.get(urlStr)
       .then(function(res) {
         //console.log(res.data)
         that.sites = res.data
