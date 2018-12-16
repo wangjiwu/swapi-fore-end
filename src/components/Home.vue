@@ -132,9 +132,8 @@ export default {
      
       that.axios.get(urlStr)
       .then(function(res) {
-        console.log(res.data["data"]["people"])
-        that.sites = res.data["data"]["people"]
-        console.log(res.data["data"]["people"].BirthYear)
+        that.sites = res.data
+        
 
 
       })

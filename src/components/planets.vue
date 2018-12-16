@@ -102,7 +102,7 @@ export default {
             }
         },
         updated() {
-            this.msgtmp = this.msg["data"]["films"]
+            this.msgtmp = this.msg["data"]["planets"]
         }
 }
 </script>
